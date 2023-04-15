@@ -28,3 +28,29 @@ console.log(somaNumerosPequenos(1, 10));
 // Pode colocar qualquer um dos 3;
 
 //Hoisting: arrow function se comporta com expressão.
+
+const num = 10;
+
+if (num !== null) {
+ console.log(`o número é ${num}`);
+}
+
+//A expressão acima também poderia ser escrita da seguinte forma:
+
+if (num) {
+ console.log(`o número é ${num}`);
+}
+
+//Com o mesmo resultado.
+
+const num1 = null;
+
+if (num1 === null) {
+ console.log('número não fornecido');
+}
+
+//O código acima também pode ser escrito da seguinte forma, pois null é considerado um valor “falsy”:
+
+if (!num) {
+    console.log('número não fornecido');
+}
